@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
-  <body class="">
+  <body>
     <nav class="f fixed inset-x-0 top-6 z-50 mx-auto w-full max-w-[1280px] px-[75px]">
       <div class="rounded-4xl mx-auto flex h-[96px] items-center justify-between rounded-20 bg-[#141414] px-[30px] text-[16px]">
         <img src="assets/images/logos/logo.svg" alt="Logo" />
@@ -20,12 +20,8 @@
           <li>About</li>
         </ul>
         <div class="flex space-x-3">
-          <a href="">
-            <button class="btn secondary">Sign In</button>
-          </a>
-          <a href="">
-            <button class="btn primary">Sign Up</button>
-          </a>
+          <a href="" class="btn secondary">Sign In</a>
+          <a href="" class="btn primary">Sign Up</a>
         </div>
       </div>
     </nav>
@@ -37,10 +33,10 @@
             <h1 class="w-1/2 text-[55px] font-bold">Find Glorious Living And Loving Space</h1>
             <p class="w-1/3 text-base leading-8">Dolor house comfortable si amet with cheap price that also lorem when you need grow.</p>
           </div>
-          <div class="mt-[50px] flex">
+          <form class="mt-[50px] flex">
             <input class="w-[400px] rounded-s-full bg-[#141414] py-5 pl-[30px] pr-10 text-[20px] text-[#A8A8A8] focus:outline-none" placeholder="Search by city or country..." />
-            <button class="rounded-e-full bg-primary px-10 py-5 text-[20px] font-semibold">Explore</button>
-          </div>
+            <button type="submit" class="rounded-e-full bg-primary px-10 py-5 text-[20px] font-semibold">Explore</button>
+          </form>
         </div>
       </div>
 
@@ -378,7 +374,7 @@
             <h1 class="text-[28px] font-bold text-white">Categories</h1>
             <p class="text-lg text-[#A8A8AB]">We provide everything</p>
           </div>
-          <button class="btn primary">Explore All</button>
+          <a href="" class="btn primary">Explore All</a>
         </div>
         <div class="grid grid-cols-4 gap-[30px]">
           <a href="">
@@ -490,67 +486,74 @@
           </li>
         </ul>
         <div class="flex items-center space-x-[14px]">
-          <a href="">
-            <button class="btn primary flex items-center">
-              <img src="assets/images/icons/message-notif.svg" class="mr-[10px]" />
-              Call Sales
-            </button>
+          <a href="" class="btn primary flex items-center">
+            <img src="assets/images/icons/message-notif.svg" class="mr-[10px]" />
+            Call Sales
           </a>
-          <a href="">
-            <button class="btn secondary">All Benefits</button>
-          </a>
+          <a href="" class="btn secondary">All Benefits</a>
         </div>
       </div>
 
       <div class="grid grid-cols-2 gap-[30px] text-white">
-        <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
-          <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-            <div class="flex w-full items-center justify-between">
-              <h1 class="w-[170px] text-xl font-bold">House for Office and Living</h1>
-              <div class="flex items-center space-x-1">
-                <img src="assets/images/icons/profile-2user copy.svg" alt="" />
-                <p>18,309</p>
+        <a href="">
+          <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
+            <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+              <div class="flex w-full items-center justify-between">
+                <h1 class="w-[170px] text-xl font-bold">House for Office and Living</h1>
+                <div class="flex items-center space-x-1">
+                  <img src="assets/images/icons/profile-2user copy.svg" alt="" />
+                  <p>18,309</p>
+                </div>
               </div>
             </div>
+            <img src="assets/images/thumbnails/cover-5.png" alt="" class="" loading="lazy" />
           </div>
-          <img src="assets/images/thumbnails/cover-5.png" alt="" class="" loading="lazy" />
-        </div>
-        <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
-          <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-            <div class="flex w-full items-center justify-between">
-              <h1 class="w-[170px] text-xl font-bold">House Nearby with Mall</h1>
-              <div class="flex items-center space-x-1">
-                <img src="assets/images/icons/profile-2user copy.svg" alt="" />
-                <p>84,209</p>
+        </a>
+
+        <a href="">
+          <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
+            <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+              <div class="flex w-full items-center justify-between">
+                <h1 class="w-[170px] text-xl font-bold">House Nearby with Mall</h1>
+                <div class="flex items-center space-x-1">
+                  <img src="assets/images/icons/profile-2user copy.svg" alt="" />
+                  <p>84,209</p>
+                </div>
               </div>
             </div>
+            <img src="assets/images/thumbnails/cover-6.png" alt="" class="" loading="lazy" />
           </div>
-          <img src="assets/images/thumbnails/cover-6.png" alt="" class="" loading="lazy" />
-        </div>
-        <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
-          <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-            <div class="flex w-full items-center justify-between">
-              <h1 class="w-[170px] text-xl font-bold">House HistoricalBuilding</h1>
-              <div class="flex items-center space-x-1">
-                <img src="assets/images/icons/profile-2user copy.svg" alt="" />
-                <p>22,409</p>
+        </a>
+
+        <a href="">
+          <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
+            <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+              <div class="flex w-full items-center justify-between">
+                <h1 class="w-[170px] text-xl font-bold">House HistoricalBuilding</h1>
+                <div class="flex items-center space-x-1">
+                  <img src="assets/images/icons/profile-2user copy.svg" alt="" />
+                  <p>22,409</p>
+                </div>
               </div>
             </div>
+            <img src="assets/images/thumbnails/cover-7.png" alt="" class="" loading="lazy" />
           </div>
-          <img src="assets/images/thumbnails/cover-7.png" alt="" class="" loading="lazy" />
-        </div>
-        <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
-          <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-            <div class="flex w-full items-center justify-between">
-              <h1 class="w-[170px] text-xl font-bold">Landed House with Park</h1>
-              <div class="flex items-center space-x-1">
-                <img src="assets/images/icons/profile-2user copy.svg" alt="" />
-                <p>47,583</p>
+        </a>
+
+        <a href="">
+          <div class="relative h-[200px] w-[310px] overflow-hidden rounded-3xl text-white">
+            <div class="absolute flex h-full w-full items-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+              <div class="flex w-full items-center justify-between">
+                <h1 class="w-[170px] text-xl font-bold">Landed House with Park</h1>
+                <div class="flex items-center space-x-1">
+                  <img src="assets/images/icons/profile-2user copy.svg" alt="" />
+                  <p>47,583</p>
+                </div>
               </div>
             </div>
+            <img src="assets/images/thumbnails/cover-8.png" alt="" class="" loading="lazy" />
           </div>
-          <img src="assets/images/thumbnails/cover-8.png" alt="" class="" loading="lazy" />
-        </div>
+        </a>
       </div>
     </section>
 
