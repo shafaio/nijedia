@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -10,38 +10,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
   </head>
   <body class="">
-    <nav class="max-w-[1280px] w-full z-50 justify-between px-[30px] rounded-20 text-[16px] bg-[#141414] mx-auto inset-x-0 flex items-center h-[96px] rounded-4xl fixed top-6">
-      <img src="assets/images/logos/logo.svg" alt="Logo" />
-      <ul class="flex font-semibold text-white items-center space-x-[30px]">
-        <li>Featured</li>
-        <li>Categories</li>
-        <li>Testimonial</li>
-        <li>About</li>
-      </ul>
-      <div class="flex space-x-3">
-        <button class="btn secondary">Sign In</button>
-        <button class="btn primary">Sign Up</button>
+    <nav class="f fixed inset-x-0 top-6 z-50 mx-auto w-full max-w-[1280px] px-[75px]">
+      <div class="rounded-4xl mx-auto flex h-[96px] items-center justify-between rounded-20 bg-[#141414] px-[30px] text-[16px]">
+        <img src="assets/images/logos/logo.svg" alt="Logo" />
+        <ul class="flex items-center space-x-[30px] font-semibold text-white">
+          <li>Featured</li>
+          <li>Categories</li>
+          <li>Testimonial</li>
+          <li>About</li>
+        </ul>
+        <div class="flex space-x-3">
+          <a href="">
+            <button class="btn secondary">Sign In</button>
+          </a>
+          <a href="">
+            <button class="btn primary">Sign Up</button>
+          </a>
+        </div>
       </div>
     </nav>
 
-    <section class="h-screen bg-hero bg-center bg-cover bg-no-repeat w-full relative">
-      <div class="max-w-[1280px] px-[75px] w-full mx-auto grid h-screen items-center">
+    <section class="relative h-[750px] w-full bg-hero bg-cover bg-center bg-no-repeat">
+      <div class="mx-auto grid h-screen w-full max-w-[1280px] items-center px-[75px]">
         <div>
           <div class="space-y-[10px] text-white">
             <h1 class="w-1/2 text-[55px] font-bold">Find Glorious Living And Loving Space</h1>
             <p class="w-1/3 text-base leading-8">Dolor house comfortable si amet with cheap price that also lorem when you need grow.</p>
           </div>
           <div class="mt-[50px] flex">
-            <input class="w-[400px] focus:outline-none rounded-s-full bg-[#141414] py-5 pl-[30px] pr-10 text-[20px] text-[#A8A8A8]" placeholder="Search by city or country..." />
+            <input class="w-[400px] rounded-s-full bg-[#141414] py-5 pl-[30px] pr-10 text-[20px] text-[#A8A8A8] focus:outline-none" placeholder="Search by city or country..." />
             <button class="rounded-e-full bg-primary px-10 py-5 text-[20px] font-semibold">Explore</button>
           </div>
         </div>
       </div>
 
-      <div class="max-w-[1280px] mx-auto absolute inset-x-0 -bottom-[64px] px-[75px]">
+      <div class="absolute inset-x-0 -bottom-16 mx-auto max-w-[1280px] px-[75px]">
         <div class="flex justify-between rounded-20 bg-[#141414] px-[50px] py-6 text-white">
           <div class="flex items-center space-x-4">
-            <div class="h-[70px] w-[70px] rounded-full bg-primary flex items-center justify-center">
+            <div class="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-primary">
               <img src="assets/images/icons/house-2.svg" alt="Kos Available Icon" />
             </div>
             <div>
@@ -53,7 +59,7 @@
           <div class="h-20 border border-[#353535]"></div>
 
           <div class="flex items-center space-x-4">
-            <div class="h-[70px] w-[70px] rounded-full bg-primary flex items-center justify-center">
+            <div class="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-primary">
               <img src="assets/images/icons/profile-2user.svg" alt="People Happy Icon" />
             </div>
             <div>
@@ -65,7 +71,7 @@
           <div class="h-20 border border-[#353535]"></div>
 
           <div class="flex items-center space-x-4">
-            <div class="h-[70px] w-[70px] rounded-full bg-primary flex items-center justify-center">
+            <div class="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-primary">
               <img src="assets/images/icons/security-user.svg" alt="High Security Icon" />
             </div>
             <div>
@@ -77,7 +83,7 @@
           <div class="h-20 border border-[#353535]"></div>
 
           <div class="flex items-center space-x-4">
-            <div class="h-[70px] w-[70px] rounded-full bg-primary flex items-center justify-center">
+            <div class="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-primary">
               <img src="assets/images/icons/global.svg" alt="Countries Icon" />
             </div>
             <div>
@@ -89,208 +95,284 @@
       </div>
     </section>
 
-    <section class="max-w-[1280px] w-full mx-auto px-[75px] space-y-[30px] pt-16 mt-[100px]">
+    <section class="mx-auto mt-[100px] w-full max-w-[1280px] space-y-[30px] px-[75px] pt-16">
       <div class="text-center text-white">
         <h1 class="text-[28px] font-bold">Our Latest Deals</h1>
         <p class="text-lg text-[#A8A8AB]">Explore the beauty of architecture and living love</p>
       </div>
 
       <div class="relative">
-        <button onclick="prevSlide()" class="absolute -left-[20px] top-[72px] flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#141414] z-10">
+        <button onclick="prevSlide()" class="absolute -left-[20px] top-[72px] z-10 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#141414]">
           <img src="assets/images/icons/arrow-left.svg" alt="" />
         </button>
-        <button onclick="nextSlide()" class="absolute -right-[20px] top-[72px] flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#141414] z-10">
+        <button onclick="nextSlide()" class="absolute -right-[20px] top-[72px] z-10 flex h-[50px] w-[50px] items-center justify-center rounded-full bg-[#141414]">
           <img src="assets/images/icons/arrow-left.svg" alt="" class="rotate-180" />
         </button>
 
-        <div class="flex overflow-x-hidden space-x-[30px] w-full" id="scroll-swiper">
+        <div class="flex w-full space-x-[30px] overflow-x-hidden" id="scroll-swiper">
           <div class="flex space-x-[30px] text-white">
-            <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
-              <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <h1 class="text-xl font-bold">De Flecce</h1>
-                    <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">De Flecce</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
                   </div>
-                  <div class="flex items-center space-x-0.5">
-                    <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
-                    <span class="text-sm">4.5/5</span>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
-                    <p class="text-sm">529 sqft</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
-                    <p class="text-sm">3</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
-                    <p class="text-sm">10 gb</p>
-                  </div>
-                </div>
+                <img src="assets/images/thumbnails/cover-1.png" alt="De Flecce Image" class="h-full w-full object-cover" />
               </div>
-              <img src="assets/images/thumbnails/cover-1.png" alt="De Flecce Image" class="w-full h-full object-cover" />
-            </div>
+            </a>
 
-            <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
-              <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <h1 class="text-xl font-bold">Party Every</h1>
-                    <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">Party Every</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
                   </div>
-                  <div class="flex items-center space-x-0.5">
-                    <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
-                    <span class="text-sm">4.5/5</span>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
-                    <p class="text-sm">529 sqft</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
-                    <p class="text-sm">3</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
-                    <p class="text-sm">10 gb</p>
-                  </div>
-                </div>
+                <img src="assets/images/thumbnails/cover-2.png" alt="De Flecce Image" class="h-full w-full object-cover" />
               </div>
-              <img src="assets/images/thumbnails/cover-2.png" alt="De Flecce Image" class="w-full h-full object-cover" />
-            </div>
+            </a>
 
-            <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
-              <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <h1 class="text-xl font-bold">Brown Hall</h1>
-                    <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">Brown Hall</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
                   </div>
-                  <div class="flex items-center space-x-0.5">
-                    <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
-                    <span class="text-sm">4.5/5</span>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
-                    <p class="text-sm">529 sqft</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
-                    <p class="text-sm">3</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
-                    <p class="text-sm">10 gb</p>
-                  </div>
-                </div>
+                <img src="assets/images/thumbnails/cover-3.png" alt="De Flecce Image" class="h-full w-full object-cover" />
               </div>
-              <img src="assets/images/thumbnails/cover-3.png" alt="De Flecce Image" class="w-full h-full object-cover" />
-            </div>
+            </a>
 
-            <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
-              <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <h1 class="text-xl font-bold">Mini Max</h1>
-                    <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">Mini Max</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
                   </div>
-                  <div class="flex items-center space-x-0.5">
-                    <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
-                    <span class="text-sm">4.5/5</span>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
-                    <p class="text-sm">529 sqft</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
-                    <p class="text-sm">3</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
-                    <p class="text-sm">10 gb</p>
-                  </div>
-                </div>
+                <img src="assets/images/thumbnails/cover-4.png" alt="De Flecce Image" class="h-full w-full object-cover" />
               </div>
-              <img src="assets/images/thumbnails/cover-4.png" alt="De Flecce Image" class="w-full h-full object-cover" />
-            </div>
+            </a>
 
-            <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
-              <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <h1 class="text-xl font-bold">Mini Max</h1>
-                    <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">De Flecce</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
                   </div>
-                  <div class="flex items-center space-x-0.5">
-                    <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
-                    <span class="text-sm">4.5/5</span>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
-                    <p class="text-sm">529 sqft</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
-                    <p class="text-sm">3</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
-                    <p class="text-sm">10 gb</p>
-                  </div>
-                </div>
+                <img src="assets/images/thumbnails/cover-1.png" alt="De Flecce Image" class="h-full w-full object-cover" />
               </div>
-              <img src="assets/images/thumbnails/cover-4.png" alt="De Flecce Image" class="w-full h-full object-cover" />
-            </div>
+            </a>
 
-             <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
-              <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
-                <div class="flex items-center justify-between">
-                  <div>
-                    <h1 class="text-xl font-bold">Mini Max</h1>
-                    <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">Party Every</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
                   </div>
-                  <div class="flex items-center space-x-0.5">
-                    <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
-                    <span class="text-sm">4.5/5</span>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
                   </div>
                 </div>
-                <div class="flex items-center justify-between">
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
-                    <p class="text-sm">529 sqft</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
-                    <p class="text-sm">3</p>
-                  </div>
-                  <div class="flex items-center space-x-1">
-                    <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
-                    <p class="text-sm">10 gb</p>
-                  </div>
-                </div>
+                <img src="assets/images/thumbnails/cover-2.png" alt="De Flecce Image" class="h-full w-full object-cover" />
               </div>
-              <img src="assets/images/thumbnails/cover-4.png" alt="De Flecce Image" class="w-full h-full object-cover" />
-            </div>
+            </a>
+
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">Brown Hall</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
+                  </div>
+                </div>
+                <img src="assets/images/thumbnails/cover-3.png" alt="De Flecce Image" class="h-full w-full object-cover" />
+              </div>
+            </a>
+
+            <a href="">
+              <div class="relative h-[350px] w-[260px] overflow-hidden rounded-3xl">
+                <div class="absolute flex h-full w-full flex-col justify-end space-y-[14px] bg-gradient-to-b from-white/10 from-[46%] to-[#050211] to-[86%] p-5">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <h1 class="text-xl font-bold">Mini Max</h1>
+                      <p class="text-sm font-semibold">$47.298<span class="text-base font-normal">/mo</span></p>
+                    </div>
+                    <div class="flex items-center space-x-0.5">
+                      <img src="assets/images/icons/Star.svg" alt="Rating Icon" />
+                      <span class="text-sm">4.5/5</span>
+                    </div>
+                  </div>
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/format-square.svg" alt="Area Icon" />
+                      <p class="text-sm">529 sqft</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/profile-2user copy.svg" alt="Occupancy Icon" />
+                      <p class="text-sm">3</p>
+                    </div>
+                    <div class="flex items-center space-x-1">
+                      <img src="assets/images/icons/wifi.svg" alt="Wifi Icon" />
+                      <p class="text-sm">10 gb</p>
+                    </div>
+                  </div>
+                </div>
+                <img src="assets/images/thumbnails/cover-4.png" alt="De Flecce Image" class="h-full w-full object-cover" />
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="bg-[#141414] py-[50px] mt-[100px]">
-      <div class="max-w-[1280px] px-[75px] mx-auto space-y-[30px]">
+    <section class="mt-[100px] bg-[#141414] py-[50px]">
+      <div class="mx-auto max-w-[1280px] space-y-[30px] px-[75px]">
         <div class="flex items-center justify-between">
           <div>
             <h1 class="text-[28px] font-bold text-white">Categories</h1>
@@ -299,74 +381,90 @@
           <button class="btn primary">Explore All</button>
         </div>
         <div class="grid grid-cols-4 gap-[30px]">
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/microscope.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Star Hills</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/microscope.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Star Hills</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/buildings.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Apartment</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/buildings.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Apartment</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/house-2 copy.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Nearby City</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/house-2 copy.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Nearby City</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/building-4.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Landed House</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/building-4.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Landed House</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/airplane.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Airport</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/airplane.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Airport</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/cup.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Awards</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/cup.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Awards</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/sun-fog.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Sunset</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/sun-fog.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Sunset</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
 
-          <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
-            <img src="assets/images/icons/element-equal.svg" alt="Star Hills Icon" class="w-9 h-9" />
-            <div class="">
-              <h1 class="font-bold text-[20px]">Others</h1>
-              <p class="text-[#A8A8AB]">18,394</p>
+          <a href="">
+            <div class="flex items-center space-x-4 rounded-[20px] bg-[#202020] px-5 py-4 text-white">
+              <img src="assets/images/icons/element-equal.svg" alt="Star Hills Icon" class="h-9 w-9" />
+              <div class="">
+                <h1 class="text-[20px] font-bold">Others</h1>
+                <p class="text-[#A8A8AB]">18,394</p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="max-w-[1280px] mx-auto px-[75px] flex justify-between mt-[100px]">
+    <section class="mx-auto mt-[100px] flex max-w-[1280px] justify-between px-[75px]">
       <div class="max-w-[383px] space-y-[30px]">
         <h1 class="text-[28px] font-bold text-white">Huge Benefits That Make You Feel Happier</h1>
         <ul class="space-y-5">
@@ -392,11 +490,15 @@
           </li>
         </ul>
         <div class="flex items-center space-x-[14px]">
-          <button class="btn primary flex items-center">
-            <img src="assets/images/icons/message-notif.svg" class="mr-[10px]" />
-            Call Sales
-          </button>
-          <button class="btn secondary">All Benefits</button>
+          <a href="">
+            <button class="btn primary flex items-center">
+              <img src="assets/images/icons/message-notif.svg" class="mr-[10px]" />
+              Call Sales
+            </button>
+          </a>
+          <a href="">
+            <button class="btn secondary">All Benefits</button>
+          </a>
         </div>
       </div>
 
@@ -452,7 +554,7 @@
       </div>
     </section>
 
-    <section class="max-w-[1280px] mx-auto px-[75px] space-y-[30px] mt-[100px]">
+    <section class="mx-auto mt-[100px] max-w-[1280px] space-y-[30px] px-[75px]">
       <div class="text-center">
         <h1 class="text-[28px] font-bold text-white">Happy Customers</h1>
         <p class="text-lg text-[#A8A8AB]">We’d love to come back again soon</p>
@@ -462,7 +564,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -475,7 +577,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">It’s just amazing, will be back.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -488,7 +590,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -501,7 +603,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">Price was too low yet luxury.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -514,7 +616,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -527,7 +629,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">During covid I was stayed here and I got a lot of full of supports that I need to keep my body healthy.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -540,7 +642,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -553,7 +655,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">It’s just amazing, will be back.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -566,7 +668,7 @@
           <img src="assets/images/icons/stars.svg" alt="" />
           <p class="text-lg leading-8">I was not so sure if there was a beautiful bedroom, but it was really great experience.</p>
           <div class="flex items-center space-x-3">
-            <div class="h-[50px] w-[50px] rounded-full">
+            <div class="h-[50px] w-[50px] overflow-hidden rounded-full">
               <img src="assets/images/photos/photo.png" alt="" />
             </div>
             <div>
@@ -578,8 +680,8 @@
       </div>
     </section>
 
-    <footer class="space-y-[50px] bg-[#141414] py-[100px] mt-[100px]">
-      <div class="max-w-[1280px] mx-auto px-[75px]">
+    <footer class="mt-[100px] space-y-[50px] bg-[#141414] py-[100px]">
+      <div class="mx-auto max-w-[1280px] px-[75px]">
         <div class="flex justify-between">
           <div class="space-y-3">
             <h1 class="text-base font-semibold text-white">Solutions</h1>
@@ -616,7 +718,7 @@
               <h1 class="text-base font-semibold text-white">Subscribe & Free Rewards</h1>
               <div class="relative flex items-center">
                 <img src="assets/images/icons/sms.svg" class="absolute left-5 top-0 translate-y-1/2" alt="SMS Icon" />
-                <input type="email" placeholder="Email Address" class="w-[367px] rounded-full px-[54px] py-3" />
+                <input type="email" placeholder="Email Address" class="w-[367px] rounded-full px-[54px] py-3 focus:outline-none" />
                 <button class="btn primary -ms-[50px]">Subscribe</button>
               </div>
             </div>
@@ -633,11 +735,11 @@
         </div>
       </div>
 
-      <div class="max-w-[1280px] mx-auto px-[75px]">
+      <div class="mx-auto max-w-[1280px] px-[75px]">
         <hr class="h-px border-0 bg-[#353535]" />
       </div>
 
-      <div class="max-w-[1280px] px-[75px] flex items-center justify-between text-[#A8A8A8] mx-auto">
+      <div class="mx-auto flex max-w-[1280px] items-center justify-between px-[75px] text-[#A8A8A8]">
         <img src="assets/images/logos/logo.svg" alt="Logo" />
         <p>All Rights Reserved Nidejia BuildWithAngga 2024</p>
       </div>
